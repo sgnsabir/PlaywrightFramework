@@ -1,0 +1,28 @@
+{
+  "name": "playwrightframework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "runCommand": "npm run regression ",
+    "runall": "npx playwright test --reporter=line,allure-playwright",
+    "regression": "npx playwright test tests/Placeorder.spec.js --headed --reporter=line,allure-playwright",
+    "webTests": "npx playwright test --grep '@web' --reporter=line,allure-playwright",
+    "safariNewconfig": "npx playwright test --config playwright.config1.js --project=safari --reporter=line,allure-playwright",
+    "chromeNewconfig": "npx playwright test --config playwright.config1.js --project=chrome --reporter=line,allure-playwright",
+    "cucumberRegression": "npx cucumber-js --tags '@Regression' --retry 1 --exit --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.12",
+    "allure-playwright": "^2.15.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "exceljs": "^4.4.0"
+  }
+}

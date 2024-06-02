@@ -1,0 +1,17 @@
+tagname#id or #id
+tagname.class or .class
+[attribute='value']
+tagname[attribute='value']
+parentTagName >> childTagName
+text = ''
+const locator = page.locator(".card-body");
+locator.first
+locator.last
+locator.nth(i)
+text based locator(sudo class):
+tagname:has-attribute('string') eg=> h3:has-text('textString') 
+text based xPath: //abbr[text()='15']
+Normal xPath: //tagname[@attribute='attributeValue']
+commands:
+npx playwright test --ui
+npm install exceljs --savedev --silent
