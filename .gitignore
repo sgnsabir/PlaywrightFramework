@@ -1,5 +1,52 @@
+# Node modules
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+.pnpm/
+.cache/
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Test results and coverage
+test-results/
+coverage/
+*.lcov
+
+# Playwright-specific
+playwright-report/
+test-results/
+*.zip
+*.mp4
+*.webm
+*.png
+trace.zip
+
+# Allure results
+allure-results/
+allure-report/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
